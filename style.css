@@ -1,43 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Abel", sans-serif;
-    font-size: 10px;
-    scroll-behavior: smooth;
-  }
-  .wrapper {
-    width: auto;
-    height: 100vh;
-    
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.wallpapersafari.com/74/20/9gQXLT.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: opacity(80%);
-  }
-  .Container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-  }
-/*   .logo {
-   
-  } */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+.wrapper {
+  width: auto;
+  height: 100vh;
+  
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.wallpapersafari.com/74/20/9gQXLT.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: opacity(80%);
+}
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 50px;
+  z-index: +10;
+}
+.logo img {
+    width: 185px;
+}
+
+.img-slides{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 20px;
+}
+
+.img-slides img{
+  height: 100px;
+}
+
   .menu {
     display: inline-block;
     line-height: 80px;
@@ -78,6 +96,22 @@
   }
   .header {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 40px;
+    
+  }
+
+  .header .content{
+    height: 400px;
+  }
+
+  .header .img-header img{
+    height: 400px;
   }
   .header h1 {
     font-family: "Raleway", sans-serif;
@@ -105,5 +139,9 @@
     margin: 50px 5px 0;
     border: none;
     cursor: pointer;
+  }
+
+  .header .change-img img{
+    max-width: 300px;
   }
   
